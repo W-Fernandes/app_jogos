@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela de Eventos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1 class="titulo-eventos">Eventos</h1>
+    <div class="filtro-wrapper">
+        <label><input type="radio" name="filtro" value="todos" checked> Todos</label>
+        <label><input type="radio" name="filtro" value="ao_vivo"> Eventos ao vivo</label>
+        <label><input type="radio" name="filtro" value="por_data"> Eventos por data</label>
+        <label><input type="radio" name="filtro" value="finalizados"> Eventos finalizados por data</label>
+    </div>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Data de Início</th>
+                    <th>Data de Término</th>
+                    <th>Horário de Início</th>
+                    <th>ID</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
